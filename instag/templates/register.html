@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>ثبت نام</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='bootstrap.rtl.min.css') }}">
+
+    <style>
+      .form-signin {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: 0 auto;
+      }
+      .form-signin .checkbox {
+        font-weight: 400;
+      }
+      .form-signin .form-control {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .form-signin .form-control:focus {
+        z-index: 2;
+      }
+      .form-signin input[type="text"] {
+        margin-bottom: 5px;
+      }
+      .form-signin input[type="password"] {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+
+  <body class="text-center">
+    <header>
+      <div class="navbar navbar-dark bg-info shadow-sm">
+        <div class="container">
+          <a href="/" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="me-2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>خانه عکاسان</strong>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <form class="form-signin" method="post">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          aria-hidden="true"
+          class="me-2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+          />
+          <circle cx="12" cy="13" r="4" />
+        </svg>
+        <h3 class="mb-3">خانه عکاسان</h3>
+
+        <div class="input-group">
+          <input
+            type="text"
+            id="inputUsername"
+            class="form-control"
+            placeholder="نام کاربری"
+            required
+            autofocus
+            name="nm"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="text"
+            id="inputEmail"
+            class="form-control"
+            placeholder="ایمیل"
+            required
+            autofocus
+            name="email"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="password"
+            id="inputPassword"
+            class="form-control"
+            placeholder="رمز عبور"
+            required
+            name="passwd"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="password"
+            id="inputPasswordConfirm"
+            class="form-control"
+            placeholder="تکرار رمز عبور"
+            required
+            name="passw"
+          />
+        </div>
+      <button type="submit" class="btn btn-lg btn-success w-100">ثبت نام</button>
+      </form>
+    </main>
+    <script type="text/javascript" src="{{url_for('static', filename= 'bootstrap.bundle.min.js')}}"></script>  </body>
+</html>

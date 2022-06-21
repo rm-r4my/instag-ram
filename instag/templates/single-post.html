@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static', filename='bootstrap.rtl.min.css') }}" rel="stylesheet" />
+
+    <title>Instagram!</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar navbar-dark bg-info shadow-sm">
+        <div class="container">
+          <a href="/" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="me-2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>خانه عکاسان</strong>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-md-3">
+              <div class="card shadow-sm">
+                <title>Placeholder</title>
+                <img src="{{ url_for('static', filename='laptop.jpeg') }}" class="img-fluid" alt="laptop" />
+
+                <div class="card-body">
+                  <p class="card-text">
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-outline-danger">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-heart"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <p>
+                      <small>11:40</small>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-calendar"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                        ></path>
+                      </svg>
+                    </p>
+                  </div>
+                </div>
+                </div>
+                <h4 class="mt-5">نظرات</h4>
+                <hr />
+
+                <div id="comments">
+                    <div class="card mt-1 border-primary">
+                        <div class="card-header">
+                        اصغر
+                        </div>
+                        <div class="card-body">
+                        <p class="card-text">خیلی زیباست.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mt-1 border-primary">
+                        <div class="card-header">
+                        سارا
+                        </div>
+                        <div class="card-body">
+                        <p class="card-text">قشنگه.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="mt-5">نوشتن یک نظر</h4>
+                <hr />
+
+
+                <form>
+                    <div class="mb-3">
+                      <textarea type="comment" name="comment" class="form-control" id="comment"></textarea>
+                    </div>
+    
+                    <button type="submit" class="btn btn-primary">ثبت</button>
+                </form>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="mb-1">تمام حقوق این سایت متعلق به خانه عکاسان می باشد</p>
+        <p><a href="/create"> ساخت پست </a></p>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='bootstrap.bundle.min.js') }}"></script>
+  </body>
+</html>
